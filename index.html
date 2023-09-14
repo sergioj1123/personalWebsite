@@ -5,7 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="stylesheet" href="./pages/color-1.css" />
+    <!-- colors -->
+    <link
+      rel="stylesheet"
+      href="./pages/colors/color-1.css"
+      class="alternate-style"
+      title="color-1"
+    />
+    <link
+      rel="stylesheet"
+      href="./pages/colors/color-2.css"
+      class="alternate-style"
+      title="color-2"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./pages/colors/color-3.css"
+      class="alternate-style"
+      title="color-3"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./pages/colors/color-4.css"
+      class="alternate-style"
+      title="color-4"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./pages/colors/color-5.css"
+      class="alternate-style"
+      title="color-5"
+      disabled
+    />
+    <link rel="stylesheet" href="./pages/style-switcher.css" />
     <!-- link das fontes utilizadas -->
     <link
       rel="stylesheet"
@@ -24,24 +59,24 @@
         </div>
         <ul class="nav">
           <li>
-            <a href="#" class="active"><i class="fa fa-home"></i>Home</a>
+            <a href="#home" class="active"><i class="fa fa-home"></i>Home</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-user"></i>Sobre mim</a>
+            <a href="#about"><i class="fa fa-user"></i>Sobre mim</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-list"></i>Lista</a>
+            <a href="#service"><i class="fa fa-list"></i>Serviços</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-briefcase"></i>Portfólio</a>
+            <a href="#portifolio"><i class="fa fa-briefcase"></i>Portfólio</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-comments"></i>Comentário</a>
+            <a href="#contact"><i class="fa fa-comments"></i>Comentário</a>
           </li>
         </ul>
       </nav>
       <div class="main-content">
-        <section class="home section">
+        <section class="home section" id="home">
           <div class="container">
             <div class="row">
               <div class="home-info padd-15">
@@ -57,7 +92,7 @@
                   buscando a minha migração de carreira para a área de
                   desenvolvimento, realizando diversos e bootcamps na área.
                 </p>
-                <a href="#contact" class="btn hire-me">Hire me</a>
+                <a href="#contact" class="btn hire-me">Entre em contato</a>
               </div>
               <div class="home-img padd-15">
                 <img src="./images/main.jpg" alt="Foto de Sérgio" />
@@ -65,7 +100,7 @@
             </div>
           </div>
         </section>
-        <section class="section about">
+        <section class="section about" id="about">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -77,13 +112,40 @@
                 <div class="row">
                   <div class="about-text padd-15">
                     <h3>
-                      Sou Sérgio Félix e <span>Desenvolvedor full stack</span>
+                      Sou Sérgio Félix e sou
+                      <span>Desenvolvedor full stack</span>
                     </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Tenetur cum obcaecati consequuntur, quia aspernatur beatae
-                      nam natus nihil ab reiciendis asperiores, ducimus itaque a
-                      neque facere officiis laborum. Cupiditate, placeat!
+                    <p class="general-paragraph">
+                      Olá! Tenho 25 anos, sou desenvolvedor web, apaixonado por
+                      tecnologia e focado em criar experiências digitais
+                      inovadoras. Com formação em Engenharia da Computação pela
+                      Universidade Estadual de Minas Gerais (UEMG), estou numa
+                      busca constante por aprimorar minhas habilidades e
+                      conhecimentos na área de desenvolvimento web.
+                    </p>
+                    <p class="general-paragraph">
+                      Atualmente, estou imerso no mundo do Front-end,
+                      aprimorando minhas habilidades por meio do curso de
+                      Front-end da EBAC e do bootcamp da Practicum. Tenho me
+                      dedicado ao estudo e aplicação de tecnologias essenciais,
+                      como HTML/CSS, JavaScript e React, além de explorar outras
+                      ferramentas essenciais do ecossistema.
+                    </p>
+                    <p class="general-paragraph">
+                      Minha trajetória profissional inclui 2 anos como Analista
+                      de Suporte na Cartsys, período no qual adquiri uma visão
+                      abrangente do mundo corporativo e desenvolvi diversas
+                      habilidades para trabalhar em equipe neste meio.
+                    </p>
+                    <p class="general-paragraph">
+                      Em 2022, integrei a equipe de coordenação, onde aprimorei
+                      minhas capacidades de liderança e resolução de problemas.
+                    </p>
+                    <p class="general-paragraph">
+                      Minha paixão pelo desenvolvimento de software começou
+                      durante a universidade, onde tive meu primeiro contato com
+                      a programação. Desde aí, alimento essa paixão e a
+                      transformo em projetos reais.
                     </p>
                   </div>
                 </div>
@@ -149,38 +211,59 @@
                   <div class="skills padd-15">
                     <div class="row">
                       <div class="skill-item padd-15">
-                        <h5>CSS</h5>
+                        <h5>HTML/CSS</h5>
                         <div class="progress">
-                          <div class="progress-in" style="width: 76%"></div>
-                          <div class="skill-percent">76%</div>
+                          <div class="progress-in" style="width: 100%"></div>
+                          <div class="skill-percent">2 anos</div>
                         </div>
                       </div>
                       <div class="skill-item padd-15">
                         <h5>JavaScript</h5>
                         <div class="progress">
-                          <div class="progress-in" style="width: 86%"></div>
-                          <div class="skill-percent">86%</div>
+                          <div class="progress-in" style="width: 100%"></div>
+                          <div class="skill-percent">1 ano</div>
                         </div>
                       </div>
                       <div class="skill-item padd-15">
                         <h5>React</h5>
                         <div class="progress">
-                          <div class="progress-in" style="width: 66%"></div>
-                          <div class="skill-percent">66%</div>
+                          <div class="progress-in" style="width: 100%"></div>
+                          <div class="skill-percent">6 meses</div>
+                        </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>Bootstrap</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 100%"></div>
+                          <div class="skill-percent">6 meses</div>
+                        </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>Gulp</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 100%"></div>
+                          <div class="skill-percent">6 meses</div>
                         </div>
                       </div>
                       <div class="skill-item padd-15">
                         <h5>Java</h5>
                         <div class="progress">
-                          <div class="progress-in" style="width: 56%"></div>
-                          <div class="skill-percent">56%</div>
+                          <div class="progress-in" style="width: 100%"></div>
+                          <div class="skill-percent">1 ano</div>
                         </div>
                       </div>
                       <div class="skill-item padd-15">
                         <h5>Python</h5>
                         <div class="progress">
-                          <div class="progress-in" style="width: 56%"></div>
-                          <div class="skill-percent">56%</div>
+                          <div class="progress-in" style="width: 100%"></div>
+                          <div class="skill-percent">6 meses</div>
+                        </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>SQL</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 100%"></div>
+                          <div class="skill-percent">1 ano</div>
                         </div>
                       </div>
                     </div>
@@ -196,16 +279,15 @@
                           <div class="timeline-item">
                             <div class="circle-dot"></div>
                             <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2013 - 2015
+                              <i class="fa fa-calendar"></i> 2016 - 2022
                             </h3>
                             <h4 class="timeline-title">
                               Bacharelado em Engenharia da Computação
                             </h4>
                             <p class="timeline-text">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Non consequatur beatae molestiae iusto, sint
-                              natus unde debitis aliquam eaque, optio iure dolor
-                              doloremque assumenda officia.
+                              Formado em 2022 pela Universidade Estadual de
+                              Minas Gerias (UEMG), com CORA Integralizado
+                              (Acumulado) do curso de 74,0 pontos.
                             </p>
                           </div>
                         </div>
@@ -213,7 +295,7 @@
                     </div>
                   </div>
                   <div class="experience padd-15">
-                    <h3 class="title">Experiencia</h3>
+                    <h3 class="title">Experiência</h3>
                     <div class="row">
                       <div class="timeline-box padd-15">
                         <div class="timeline shadow-dark">
@@ -221,47 +303,63 @@
                           <div class="timeline-item">
                             <div class="circle-dot"></div>
                             <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2013 - 2015
+                              <i class="fa fa-calendar"></i> Janeiro 2022 -
+                              Agosto 2022
                             </h3>
                             <h4 class="timeline-title">
-                              Bacharelado em Engenharia da Computação
+                              Coordenação do Suporte - Cartsys
                             </h4>
                             <p class="timeline-text">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Non consequatur beatae molestiae iusto, sint
-                              natus unde debitis aliquam eaque, optio iure dolor
-                              doloremque assumenda officia.
+                              Identificar problemas e Inconsistências no
+                              sistema;
+                            </p>
+                            <p class="timeline-text">
+                              Categorizar a urgência de casos;
+                            </p>
+                            <p class="timeline-text">
+                              Servir como referencia técnica do sistema;
+                            </p>
+                            <p class="timeline-text">
+                              Manutenção em bancos de dados.
                             </p>
                           </div>
                           <div class="timeline-item">
                             <div class="circle-dot"></div>
                             <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2013 - 2015
+                              <i class="fa fa-calendar"></i> Dezembro 2019 -
+                              Dezembro 2021
                             </h3>
                             <h4 class="timeline-title">
-                              Bacharelado em Engenharia da Computação
+                              Analista de Suporte - Cartsys
                             </h4>
                             <p class="timeline-text">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Non consequatur beatae molestiae iusto, sint
-                              natus unde debitis aliquam eaque, optio iure dolor
-                              doloremque assumenda officia.
+                              Atendimento direto com clientes através de chats e
+                              telefones;
+                            </p>
+                            <p class="timeline-text">
+                              Auxilio no esclarecimento de dúvidas;
+                            </p>
+                            <p class="timeline-text">
+                              Configuração de ambientes operacionais.
                             </p>
                           </div>
                           <div class="timeline-item">
                             <div class="circle-dot"></div>
                             <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2013 - 2015
+                              <i class="fa fa-calendar"></i> Novembro 2018 -
+                              Agosto 2019
                             </h3>
                             <h4 class="timeline-title">
-                              Bacharelado em Engenharia da Computação
+                              Estagiário, INSS - Gerência Executiva de
+                              Divinópolis.
                             </h4>
                             <p class="timeline-text">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Non consequatur beatae molestiae iusto, sint
-                              natus unde debitis aliquam eaque, optio iure dolor
-                              doloremque assumenda officia.
+                              Auxilio e configuração de redes;
                             </p>
+                            <p class="timeline-text">
+                              Configuração de impressoras e outros scanners;
+                            </p>
+                            <p class="timeline-text">Suporte técnico.</p>
                           </div>
                         </div>
                       </div>
@@ -272,7 +370,7 @@
             </div>
           </div>
         </section>
-        <section class="service section">
+        <section class="service section" id="service">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -285,37 +383,24 @@
                   <div class="icon">
                     <i class="fa fa-code"></i>
                   </div>
-                  <h4>Dev</h4>
+                  <h4>Desenvolvimento de Landing Pages</h4>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Dolores aspernatur dolorum id expedita neque temporibus
-                    vitae commodi aperiam dicta velit ut non placeat repudiandae
-                    fuga, voluptatum rerum ullam tempore at.
-                  </p>
-                </div>
-              </div>
-              <div class="service-item padd-15">
-                <div class="service-item-inner">
-                  <div class="icon">
-                    <i class="fa fa-laptop-code"></i>
-                  </div>
-                  <h4>Dev</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Saepe sapiente eum rerum deserunt nam, quos corrupti ipsum
-                    doloremque ipsa repudiandae neque expedita, ex, obcaecati
-                    possimus in. Iure molestias perspiciatis eligendi?
+                    Uma landing page é mais do que apenas uma página da web. É o
+                    portal de entrada para o seu negócio, uma vitrine virtual
+                    que captura a atenção e o interesse do seu público-alvo. Uma
+                    landing page pode: aumentar as conversões, expandir sua base
+                    de clientes e fortalecer a marca.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="portifolio section">
+        <section class="portifolio section" id="portifolio">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
-                <h2>Portifolio</h2>
+                <h2>Portfólio</h2>
               </div>
             </div>
             <div class="row">
@@ -327,72 +412,142 @@
               <div class="portifolio-item padd-15">
                 <div class="portifolio-item-inner shadow-dark">
                   <div class="portifolio-img">
-                    <img
-                      src="./images/portifolio-1.png"
-                      alt="Imagem 1 do meu portifolio"
-                    />
+                    <a
+                      href="https://github.com/sergioj1123/apartment-rental-system"
+                    >
+                      <img
+                        src="./images/Apartamento.png"
+                        alt="Sistema de controle de aluguel de apartamentos"
+                      />
+                    </a>
                   </div>
+                </div>
+                <div class="portifolio-text padd-15">
+                  <p class="general-paragraph">
+                    O projeto foi desenvolvido desde a parte do Front-end até a
+                    parte do Back-end. O mesmo possui as funcionalidades de um
+                    sistema de aluguel de apartamentos ou casas, com funções de
+                    cadastro de novos locatários no sistema (locatários devem
+                    possuir nome e CPF), novos condomínios/prédios (possuindo um
+                    nome, rua e número), por fim, novos apartamentos (possuindo
+                    número, descrição, valor de aluguel e número de cômodos).
+                    Todos os apartamentos são vinculados a um condomínio/prédio,
+                    podendo possuir ou não um inquilino.
+                  </p>
+                  <p class="general-paragraph">
+                    A parte do Front-end foi feita utilizando HTML/CSS, e também
+                    JavaScript para realizar as chamadas de requisições no
+                    Back-end. A parte do Back-end foi realizado utilizando
+                    também o JavaScript, além do Node.js, Cors e o framework
+                    Express. O formato escolhido para o banco de dados foi o
+                    MySQL, utilizando o Sequelize para realizar a interpretação
+                    e manipulação dos dados.
+                  </p>
                 </div>
               </div>
               <div class="portifolio-item padd-15">
                 <div class="portifolio-item-inner shadow-dark">
                   <div class="portifolio-img">
-                    <img
-                      src="./images/portifolio-1.png"
-                      alt="Imagem 1 do meu portifolio"
-                    />
+                    <a href="https://github.com/sergioj1123/web_project_4_ptbr">
+                      <img
+                        src="./images/Around.png"
+                        alt="Pagina de perfil Around"
+                      />
+                    </a>
                   </div>
+                </div>
+                <div class="portifolio-text padd-15">
+                  <p class="general-paragraph">
+                    Este é um projeto que foi desenvolvido utilizando HTML, CSS
+                    e JavaScript, sendo um perfil de uma rede de fotos,
+                    mostrando algumas imagens, contendo uma função de editar o
+                    perfil, adicionar e deletar imagens, sendo possível dar like
+                    e também zoom ao clicar nas imagens.
+                  </p>
                 </div>
               </div>
               <div class="portifolio-item padd-15">
                 <div class="portifolio-item-inner shadow-dark">
                   <div class="portifolio-img">
-                    <img
-                      src="./images/portifolio-1.png"
-                      alt="Imagem 1 do meu portifolio"
-                    />
+                    <a
+                      href="https://github.com/sergioj1123/restaurantLandingPage"
+                    >
+                      <img
+                        src="./images/Restaurante.png"
+                        alt="Exemplo de pagina de um restaurante usando Bootstrap"
+                      />
+                    </a>
                   </div>
+                </div>
+                <div class="portifolio-text padd-15">
+                  <p class="general-paragraph">
+                    Landing page de um restaurante utilizando Bootstrap.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="contact section">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Fale comigo</h2>
-            </div>
-          </div>
-          <h3 class="contact-title">Tem alguma dúvida ?</h3>
-          <h4 class="contact-sub-title">Estou a sua disposição</h4>
-          <div class="row">
-            <div class="contact-info-item padd-15">
-              <div class="icon"><i class="fa fa-phone"></i></div>
-              <h4>Fale comigo</h4>
-              <p>(31) 9 9779-0309</p>
-            </div>
-            <div class="contact-info-item padd-15">
-              <div class="icon"><i class="fa fa-envelope"></i></div>
-              <h4>E-mail</h4>
-              <p>sergiojunior9@hotmail.com</p>
-            </div>
-            <div class="contact-info-item padd-15">
-              <div class="icon">
-                <i class="fa fa-brands fa-linkedin"></i>
+        <section class="contact section" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Fale comigo</h2>
               </div>
-              <h4>Linkedin</h4>
-              <p>
-                <a
-                  href="https://www.linkedin.com/in/sergio-felix-junior-592163181"
-                  >https://www.linkedin.com/in/sergio-felix-junior-592163181</a
-                >
-              </p>
+            </div>
+            <h3 class="contact-title">Tem alguma dúvida ?</h3>
+            <h4 class="contact-sub-title">Estou a sua disposição</h4>
+            <div class="row">
+              <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-phone"></i></div>
+                <h4>Fale comigo</h4>
+                <p>(31) 9 9779-0309</p>
+              </div>
+              <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-envelope"></i></div>
+                <h4>E-mail</h4>
+                <p>sergiojunior9@hotmail.com</p>
+              </div>
+              <div class="contact-info-item padd-15">
+                <div class="icon">
+                  <i class="fa fa-brands fa-linkedin"></i>
+                </div>
+                <h4>Linkedin</h4>
+                <p>
+                  <a
+                    href="https://www.linkedin.com/in/sergio-felix-junior-592163181"
+                    >https://www.linkedin.com/in/sergio-felix-junior-592163181</a
+                  >
+                </p>
+              </div>
             </div>
           </div>
         </section>
       </div>
     </div>
+    <!-- troca de cores -->
+    <div class="style-switcher">
+      <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"> </i>
+      </div>
+      <div class="day-night s-icon">
+        <i class="fas"></i>
+      </div>
+      <h4>Theme Colors</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+      </div>
+    </div>
     <!-- Carregando JavaScript -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/script.js"></script>
+    <script src="./js/style-switcher.js"></script>
   </body>
 </html>
