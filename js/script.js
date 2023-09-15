@@ -5,7 +5,7 @@ let typed = new Typed(".typing", {
     "Desenvolvedor JavaScript",
     "Desenvolvedor Web",
   ],
-  typeSpeed: 100,
+  typeSpeed: 150,
   BackSpeed: 60,
   loop: true,
 });
